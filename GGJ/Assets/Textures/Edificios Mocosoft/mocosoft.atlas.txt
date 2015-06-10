@@ -7,7 +7,7 @@ repeat: none
 MOCOSOFT
   rotate: false
   xy: 2, 2
-  size: 223, 919
+  size: 230, 930
   orig: 230, 930
-  offset: 4, 0
+  offset: 0, 0
   index: -1

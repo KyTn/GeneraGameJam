@@ -7,7 +7,7 @@ repeat: none
 POOGLE
   rotate: false
   xy: 2, 2
-  size: 227, 918
+  size: 230, 930
   orig: 230, 930
-  offset: 2, 0
+  offset: 0, 0
   index: -1
