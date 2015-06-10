@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
 
             if (!PJ1.isJumping && icontroller.J1AButton > 0)
             {
-                Debug.Log("JUMP");
+                //Debug.Log("JUMP");
                 PJ1.Jump(new Vector2(0, icontroller.J1AButton));
 
             }
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour {
 
             if (!PJ2.isJumping && icontroller.J2AButton > 0)
             {
-                Debug.Log("JUMP2");
+                //Debug.Log("JUMP2");
                 PJ2.Jump(new Vector2(0, icontroller.J2AButton));
 
             }

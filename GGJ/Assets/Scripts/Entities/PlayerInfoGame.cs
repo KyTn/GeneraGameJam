@@ -85,9 +85,28 @@ public class PlayerInfoGame : MonoBehaviour {
 
 
     }
-
-    public void DrawArrow(Vector3 from, Vector3 to)
+    public GameObject arrow;
+    public void DrawArrow()
     {
+        Vector3 ammount;
+        if (IDPlayer == 1)
+        {
+            ammount = new Vector3(-gManager.icontroller.J1left + gManager.icontroller.J1right, gManager.icontroller.J1forward - gManager.icontroller.J1backward, 0);
+
+        }
+        else
+        {
+            ammount = new Vector3(-gManager.icontroller.J2left + gManager.icontroller.J2right, gManager.icontroller.J2forward - gManager.icontroller.J2backward, 0);
+
+        }
+        arrow.SetActive(true);
+        arrow.transform.position = transform.position;
+
+        ammount.Normalize();
+
+        ammount = (arrow.transform.position - ammount);
+
+        arrow.transform.Rotate(new Vector3(0, 0, 1), Vector3.Angle(new Vector3(1, 0, 0), ammount));
 
     }
 
@@ -178,7 +197,11 @@ public class PlayerInfoGame : MonoBehaviour {
         if (preparingToAttack)
         {
             //Moving = true;
-
+            DrawArrow();
+        }
+        else
+        {
+            arrow.SetActive(false);
         }
     }
 }
