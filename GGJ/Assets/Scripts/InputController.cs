@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class InputController : MonoBehaviour {
-
+    public Camera camera;
+    public GameManager gManager;
     bool touching = false;
 
 
@@ -14,24 +15,42 @@ public class InputController : MonoBehaviour {
     Vector2 firstTouchPosition;
     Vector2 lastTouchPosition;
 	void Update () {
-        if (Input.touchCount > 0)
+
+        if (gManager.MultiPlayerActive)
         {
-            if (Input.GetTouch(0).phase == TouchPhase.Began)
+
+        }
+        else
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                firstTouchPosition = Input.touches[0].position;
                 
-                // Comprobar si hay algo en el mundo
+                RaycastHit2D ray = Physics2D.GetRayIntersection(camera.ScreenPointToRay(Input.mousePosition));
+                if (ray.collider != null && ray.collider.tag == "BuildingHigh")
+                {
+                    Debug.Log("checked!");
+                }
 
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            if (Input.touchCount > 0)
             {
-                // Si no se estan moviendo, entonces es tiempo de disparar
-                lastTouchPosition = Input.touches[0].position;
-                DrawArrowIndicator(firstTouchPosition, lastTouchPosition);
-            }
-            if (Input.GetTouch(0).phase == TouchPhase.Canceled || Input.GetTouch(0).phase == TouchPhase.Ended)
-            {
-                // Si has levantado el dedo ... 
+                if (Input.GetTouch(0).phase == TouchPhase.Began)
+                {
+                    firstTouchPosition = Input.touches[0].position;
+
+                    // Comprobar si hay algo en el mundo
+
+                }
+                if (Input.GetTouch(0).phase == TouchPhase.Moved)
+                {
+                    // Si no se estan moviendo, entonces es tiempo de disparar
+                    lastTouchPosition = Input.touches[0].position;
+                    DrawArrowIndicator(firstTouchPosition, lastTouchPosition);
+                }
+                if (Input.GetTouch(0).phase == TouchPhase.Canceled || Input.GetTouch(0).phase == TouchPhase.Ended)
+                {
+                    // Si has levantado el dedo ... 
+                }
             }
         }
 	}
