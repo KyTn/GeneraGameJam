@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: poogle_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 462189693643182408b90a8708732e3c, type: 2}
-  skeletonJSON: {fileID: 4900000, guid: 9a24e7501bdc31848ba90f0a2197c9ac, type: 3}
+  - {fileID: 11400000, guid: a28340b964ca4a641a09ceb124ebbab9, type: 2}
+  skeletonJSON: {fileID: 4900000, guid: 9216f8384c591ef4e8e8c3e49da9395c, type: 3}
   scale: .00999999978
   fromAnimation: []
   toAnimation: []
