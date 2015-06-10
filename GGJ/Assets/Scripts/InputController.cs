@@ -66,6 +66,8 @@ public class InputController : MonoBehaviour
     void Awake()
     {
         gManager = GetComponent<GameManager>();
+
+        
     }
 
 
