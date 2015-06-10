@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: poogle_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 2185fb7b027dd9f4b95f526d5ae45040, type: 3}
+  atlasFile: {fileID: 4900000, guid: 1c2dbe45f898998459ef1d978cbc1df4, type: 3}
   materials:
   - {fileID: 2100000, guid: c8dce36366ef03248b196a87de5f7687, type: 2}
