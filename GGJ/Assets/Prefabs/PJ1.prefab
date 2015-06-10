@@ -11,8 +11,8 @@ GameObject:
   - 212: {fileID: 21272704}
   - 50: {fileID: 5072704}
   - 114: {fileID: 11472704}
-  - 61: {fileID: 6172704}
-  m_Layer: 0
+  - 61: {fileID: 6126428}
+  m_Layer: 8
   m_Name: PJ1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,12 +41,12 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!61 &6172704
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+--- !u!61 &6126428
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .589395404, y: .966233194}
+  m_Size: {x: .5, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11472704
 MonoBehaviour:
@@ -69,9 +69,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gManager: {fileID: 0}
-  IDPlayer: 0
+  IDPlayer: 1
   objectCarried: {fileID: 0}
   Moving: 0
+  jumpsMax: 3
+  jumpsCount: 0
   preparingToAttack: 0
 --- !u!212 &21272704
 SpriteRenderer:

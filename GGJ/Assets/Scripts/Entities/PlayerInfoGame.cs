@@ -81,6 +81,9 @@ public class PlayerInfoGame : MonoBehaviour {
         objectCarried = obj;
         objectCarried.carriedBy = IDPlayer;
 
+        // TODO 
+
+
     }
 
     public void DrawArrow(Vector3 from, Vector3 to)
@@ -145,15 +148,17 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        
-        if (other.transform.position.y > transform.position.y)
+        if (other.transform.position.y > transform.position.y && other.gameObject.layer == 9)
         {
             StartCoroutine(ignoreCollisionCountDown(other.collider, rigidbody2D.velocity));
         }
+        else if(other.transform.position.y <= transform.position.y)
+        {
 
-        Debug.Log("collision");
-        isJumping = false;
-        jumpsCount = 0;
+            isJumping = false;
+            jumpsCount = 0;
+        }
+
     }
 
     IEnumerator ignoreCollisionCountDown(Collider2D other, Vector2 velocity)
@@ -170,10 +175,10 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public void Update()
     {
-        Debug.Log("J " + isJumping);
         if (preparingToAttack)
         {
-            Moving = true;
+            //Moving = true;
+
         }
     }
 }
