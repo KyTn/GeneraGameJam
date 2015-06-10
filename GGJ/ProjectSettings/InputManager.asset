@@ -6,7 +6,7 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: HorizontalLeft
+    m_Name: J1HorizontalLeft
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -20,9 +20,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: VerticalLeft
+    m_Name: J1VerticalLeft
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -36,9 +36,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 1
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: HorizontalRight
+    m_Name: J1HorizontalRight
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -52,9 +52,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 3
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: VerticalRight
+    m_Name: J1VerticalRight
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -68,9 +68,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 4
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: RLTrigger
+    m_Name: J1RLTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -84,9 +84,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: AButton
+    m_Name: J1AButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -100,9 +100,9 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: BButton
+    m_Name: J1BButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -116,9 +116,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: XButton
+    m_Name: J1XButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -132,9 +132,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: YButton
+    m_Name: J1YButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -148,9 +148,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: LButton
+    m_Name: J1LButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -164,9 +164,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: RButton
+    m_Name: J1RButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -180,9 +180,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: BackButton
+    m_Name: J1BackButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -196,9 +196,9 @@ InputManager:
     invert: 0
     type: 0
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: StartButton
+    m_Name: J1StartButton
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -212,9 +212,9 @@ InputManager:
     invert: 0
     type: 0
     axis: 2
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: HorizontalCenter
+    m_Name: J1HorizontalCenter
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -228,9 +228,9 @@ InputManager:
     invert: 0
     type: 2
     axis: 5
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
-    m_Name: VerticalCenter
+    m_Name: J1VerticalCenter
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -244,4 +244,4 @@ InputManager:
     invert: 0
     type: 2
     axis: 6
-    joyNum: 0
+    joyNum: 1

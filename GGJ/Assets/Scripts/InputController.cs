@@ -17,22 +17,22 @@ public class InputController : MonoBehaviour
     public float J1YButton;
 
     public float J1RButton;
-    public float LButton;
-
-    public float RLTrigger;
-
-    public float mouseXPos;
-    public float mouseXNeg;
-    public float mouseYPos;
-    public float mouseYNeg;
-
-    public float startButton;
-    public float backButton;
-
-    public float upArrowButton;
-    public float downArrowButton;
-    public float leftArrowButton;
-    public float rightArrowButton;
+    public float J1LButton;
+                 
+    public float J1RLTrigger;
+                 
+    public float J1mouseXPos;
+    public float J1mouseXNeg;
+    public float J1mouseYPos;
+    public float J1mouseYNeg;
+                 
+    public float J1startButton;
+    public float J1backButton;
+                 
+    public float J1upArrowButton;
+    public float J1downArrowButton;
+    public float J1leftArrowButton;
+    public float J1rightArrowButton;
 
 
     void Awake()
@@ -56,22 +56,22 @@ public class InputController : MonoBehaviour
         J1YButton = Input.GetButton("J1YButton") ? 1 : 0;
 
         J1RButton = Input.GetButton("J1RButton") ? 1 : 0;
-        LButton = Input.GetButton("J1LButton") ? 1 : 0;
-
-        RLTrigger = Input.GetAxis("J1RLTrigger");
-
-        mouseXPos = Input.GetAxis("J1VerticalRight") > 0 ? Input.GetAxis("J1VerticalRight") : 0;
-        mouseXNeg = -Input.GetAxis("J1VerticalRight") > 0 ? -Input.GetAxis("J1VerticalRight") : 0;
-        mouseYPos = Input.GetAxis("J1HorizontalRight") > 0 ? Input.GetAxis("J1HorizontalRight") : 0;
-        mouseYNeg = -Input.GetAxis("J1HorizontalRight") > 0 ? -Input.GetAxis("J1HorizontalRight") : 0;
-
-        startButton = Input.GetButton("J1StartButton") ? 1 : 0;
-        backButton = Input.GetButton("J1BackButton") ? 1 : 0;
-
-        upArrowButton = Input.GetAxis("J1VerticalCenter") > 0 ? Input.GetAxis("J1VerticalCenter") : 0;
-        downArrowButton = -Input.GetAxis("J1VerticalCenter") > 0 ? -Input.GetAxis("J1VerticalCenter") : 0;
-        leftArrowButton = Input.GetAxis("J1HorizontalCenter") > 0 ? Input.GetAxis("J1HorizontalCenter") : 0;
-        rightArrowButton = -Input.GetAxis("J1HorizontalCenter") > 0 ? -Input.GetAxis("J1HorizontalCenter") : 0;
+        J1LButton = Input.GetButton("J1LButton") ? 1 : 0;
+        
+        J1RLTrigger = Input.GetAxis("J1RLTrigger");
+        
+        J1mouseXPos = Input.GetAxis("J1VerticalRight") > 0 ? Input.GetAxis("J1VerticalRight") : 0;
+        J1mouseXNeg = -Input.GetAxis("J1VerticalRight") > 0 ? -Input.GetAxis("J1VerticalRight") : 0;
+        J1mouseYPos = Input.GetAxis("J1HorizontalRight") > 0 ? Input.GetAxis("J1HorizontalRight") : 0;
+        J1mouseYNeg = -Input.GetAxis("J1HorizontalRight") > 0 ? -Input.GetAxis("J1HorizontalRight") : 0;
+        
+        J1startButton = Input.GetButton("J1StartButton") ? 1 : 0;
+        J1backButton = Input.GetButton("J1BackButton") ? 1 : 0;
+        
+        J1upArrowButton = Input.GetAxis("J1VerticalCenter") > 0 ? Input.GetAxis("J1VerticalCenter") : 0;
+        J1downArrowButton = -Input.GetAxis("J1VerticalCenter") > 0 ? -Input.GetAxis("J1VerticalCenter") : 0;
+        J1leftArrowButton = Input.GetAxis("J1HorizontalCenter") > 0 ? Input.GetAxis("J1HorizontalCenter") : 0;
+        J1rightArrowButton = -Input.GetAxis("J1HorizontalCenter") > 0 ? -Input.GetAxis("J1HorizontalCenter") : 0;
 
 
     }
