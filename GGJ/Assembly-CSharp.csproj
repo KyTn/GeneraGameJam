@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,14 +46,91 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Examples\Scripts\BasicPlatformerController.cs" />
+     <Compile Include="Assets\Examples\Scripts\Chimera.cs" />
+     <Compile Include="Assets\Examples\Scripts\ConstrainedCamera.cs" />
+     <Compile Include="Assets\Examples\Scripts\DynamicSpineBone.cs" />
+     <Compile Include="Assets\Examples\Scripts\FootSoldierExample.cs" />
+     <Compile Include="Assets\Examples\Scripts\Goblins.cs" />
+     <Compile Include="Assets\Examples\Scripts\Raptor.cs" />
+     <Compile Include="Assets\Examples\Scripts\Spineboy.cs" />
+     <Compile Include="Assets\Examples\Scripts\SpineboyController.cs" />
      <Compile Include="Assets\Scripts\Entities\PlayerInfoGame.cs" />
      <Compile Include="Assets\Scripts\Entities\Throwable.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\InputController.cs" />
-     <Compile Include="Assets\Scripts\Scenario\BuildingHighController.cs" />
-     <Compile Include="Assets\Scripts\Scenario\ScenarioBuilder.cs" />
+     <Compile Include="Assets\Scripts\InputControllerASDFASDF.cs" />
      <Compile Include="Assets\Scripts\Scenario\ScenarioProps\BuildingHigh.cs" />
+     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\nubesGenerator.cs" />
+     <Compile Include="Assets\nube.cs" />
+     <Compile Include="Assets\spine-csharp\Animation.cs" />
+     <Compile Include="Assets\spine-csharp\AnimationState.cs" />
+     <Compile Include="Assets\spine-csharp\AnimationStateData.cs" />
+     <Compile Include="Assets\spine-csharp\Atlas.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\Attachment.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\AttachmentLoader.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\AttachmentType.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\MeshAttachment.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\RegionAttachment.cs" />
+     <Compile Include="Assets\spine-csharp\Attachments\SkinnedMeshAttachment.cs" />
+     <Compile Include="Assets\spine-csharp\BlendMode.cs" />
+     <Compile Include="Assets\spine-csharp\Bone.cs" />
+     <Compile Include="Assets\spine-csharp\BoneData.cs" />
+     <Compile Include="Assets\spine-csharp\Event.cs" />
+     <Compile Include="Assets\spine-csharp\EventData.cs" />
+     <Compile Include="Assets\spine-csharp\IkConstraint.cs" />
+     <Compile Include="Assets\spine-csharp\IkConstraintData.cs" />
+     <Compile Include="Assets\spine-csharp\Json.cs" />
+     <Compile Include="Assets\spine-csharp\Skeleton.cs" />
+     <Compile Include="Assets\spine-csharp\SkeletonBinary.cs" />
+     <Compile Include="Assets\spine-csharp\SkeletonBounds.cs" />
+     <Compile Include="Assets\spine-csharp\SkeletonData.cs" />
+     <Compile Include="Assets\spine-csharp\SkeletonJson.cs" />
+     <Compile Include="Assets\spine-csharp\Skin.cs" />
+     <Compile Include="Assets\spine-csharp\Slot.cs" />
+     <Compile Include="Assets\spine-csharp\SlotData.cs" />
+     <Compile Include="Assets\spine-unity\AtlasAsset.cs" />
+     <Compile Include="Assets\spine-unity\AtlasRegionAttacher.cs" />
+     <Compile Include="Assets\spine-unity\BoneFollower.cs" />
+     <Compile Include="Assets\spine-unity\BoundingBoxFollower.cs" />
+     <Compile Include="Assets\spine-unity\CustomSkin.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonAnimation.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonAnimationInterface.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonAnimator.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonDataAsset.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonExtensions.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonRenderer.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityEyeConstraint.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityGroundConstraint.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityKinematicShadow.cs" />
+     <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilitySubmeshRenderer.cs" />
+     <Compile Include="Assets\spine-unity\SpineAttributes.cs" />
+     <Compile Include="Assets\spine-unity\SpriteAttacher.cs" />
+     <Compile Include="Assets\spine-unity\SpriteCollectionAttachmentLoader.cs" />
+     <None Include="Assets\Examples\Spine\Eyes\eyes.atlas.txt" />
+     <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
+     <None Include="Assets\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Hero\hero-mesh.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Dragon\license.txt" />
+     <None Include="Assets\Examples\Spine\Hero\license.txt" />
+     <None Include="Assets\Textures\Edificios Poogle\poogle.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Raptor\raptor.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Spineboy\spineboy.atlas.txt" />
+     <None Include="Assets\Textures\Edificios Mocosoft\mocosoft.atlas.txt" />
+     <None Include="Assets\Examples\Spine\FootSoldier\license.txt" />
+     <None Include="Assets\spine-unity\Shaders\Bones.shader" />
+     <None Include="Assets\Examples\Spine\Dragon\dragon.atlas.txt" />
+     <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
+     <None Include="Assets\Examples\Spine\Goblins\goblins-mesh.atlas.txt" />
+     <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
      <None Include="Assets\DOTween\readme.txt" />
+     <None Include="Assets\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -102,7 +102,7 @@ public class PlayerInfoGame : MonoBehaviour {
 
     }
 
-    private float _speed = 10f;
+    private float _speed = 5f;
     public float speed {
 
         get { return _speed; }
@@ -121,15 +121,48 @@ public class PlayerInfoGame : MonoBehaviour {
         set { _isJumping = value; } 
     }
 
+    public int jumpsMax = 3;
+    public int jumpsCount = 0;
+
+
     public void Jump(Vector2 v)
     {
-        rigidbody2D.AddForce(v * 450);
+        if (jumpsCount >= jumpsMax)
+        {
+            return;
+        }
+        rigidbody2D.AddForce(v * 250);
         isJumping = true;
+        StartCoroutine(jumpingTime());
+        jumpsCount++;
     }
 
-    public void OnCollisionEnter(Collision other)
+    IEnumerator jumpingTime()
     {
+        yield return new WaitForSeconds(0.5f);
         isJumping = false;
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        
+        if (other.transform.position.y > transform.position.y)
+        {
+            StartCoroutine(ignoreCollisionCountDown(other.collider, rigidbody2D.velocity));
+        }
+
+        Debug.Log("collision");
+        isJumping = false;
+        jumpsCount = 0;
+    }
+
+    IEnumerator ignoreCollisionCountDown(Collider2D other, Vector2 velocity)
+    {
+        Debug.Log("Por debajo");
+        rigidbody2D.velocity = velocity;
+        Physics2D.IgnoreCollision(collider2D, other, true);
+        yield return new WaitForSeconds(0.5f);
+        Physics2D.IgnoreCollision(collider2D, other, false);
     }
 
     public bool preparingToAttack = false;

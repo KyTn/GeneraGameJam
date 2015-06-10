@@ -62,6 +62,8 @@
      <Compile Include="Assets\Scripts\InputControllerASDFASDF.cs" />
      <Compile Include="Assets\Scripts\Scenario\ScenarioProps\BuildingHigh.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\nubesGenerator.cs" />
+     <Compile Include="Assets\nube.cs" />
      <Compile Include="Assets\spine-csharp\Animation.cs" />
      <Compile Include="Assets\spine-csharp\AnimationState.cs" />
      <Compile Include="Assets\spine-csharp\AnimationStateData.cs" />
@@ -117,15 +119,15 @@
      <None Include="Assets\Examples\Spine\Hero\hero-mesh.atlas.txt" />
      <None Include="Assets\Examples\Spine\Dragon\license.txt" />
      <None Include="Assets\Examples\Spine\Hero\license.txt" />
+     <None Include="Assets\Textures\Edificios Poogle\poogle.atlas.txt" />
      <None Include="Assets\Examples\Spine\Raptor\raptor.atlas.txt" />
      <None Include="Assets\Examples\Spine\Spineboy\spineboy.atlas.txt" />
+     <None Include="Assets\Textures\Edificios Mocosoft\mocosoft.atlas.txt" />
      <None Include="Assets\Examples\Spine\FootSoldier\license.txt" />
      <None Include="Assets\spine-unity\Shaders\Bones.shader" />
      <None Include="Assets\Examples\Spine\Dragon\dragon.atlas.txt" />
-     <None Include="Assets\Textures\Edificios Poogle\poogle.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
      <None Include="Assets\Examples\Spine\Goblins\goblins-mesh.atlas.txt" />
-     <None Include="Assets\Textures\Edificios Mocosoft\mocosoft.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
      <None Include="Assets\DOTween\readme.txt" />
      <None Include="Assets\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />

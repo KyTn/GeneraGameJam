@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 
 
-        PJ1.rigidbody2D.velocity = new Vector2((-icontroller.J1left + icontroller.J1right) * PJ1.speed, PJ1.rigidbody2D.velocity.y);
+        PJ1.rigidbody2D.velocity = new Vector2((-icontroller.J1left + icontroller.J1right) * PJ1.speed * (PJ1.isJumping || PJ1.jumpsCount!=0 ? 0.4f : 1), PJ1.rigidbody2D.velocity.y);
 
         if (!PJ1.isJumping && icontroller.J1AButton > 0)
         {
