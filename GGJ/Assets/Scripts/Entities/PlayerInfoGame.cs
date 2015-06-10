@@ -63,13 +63,13 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public void MoveTo(Vector3 position)
     {
-        if (!Moving)
-        {
-            Vector3[] path = new Vector3[2];
-            path[1] = position;
-            path[0] = new Vector3((position.x + transform.position.x) / 2, (position.y + transform.position.y) / 2 + 2, (position.y + transform.position.y) / 2);
-            transform.DOPath(path, 0.8f, PathType.CatmullRom, PathMode.Full3D, 5).OnComplete(MoveToCallback);
-        }
+        //if (!Moving)
+        //{
+        //    Vector3[] path = new Vector3[2];
+        //    path[1] = position;
+        //    path[0] = new Vector3((position.x + transform.position.x) / 2, (position.y + transform.position.y) / 2 + 2, (position.y + transform.position.y) / 2);
+        //    transform.DOPath(path, 0.8f, PathType.CatmullRom, PathMode.Full3D, 5).OnComplete(MoveToCallback);
+        //}
     }
     public void MoveToCallback()
     {
@@ -100,5 +100,47 @@ public class PlayerInfoGame : MonoBehaviour {
     {
         gManager.PlayerDeath(IDPlayer);
 
+    }
+
+    private float _speed = 10f;
+    public float speed {
+
+        get { return _speed; }
+        set
+        {
+            _speed = value;
+            
+        }
+    
+    
+    }
+
+    private bool _isJumping = false;
+    public bool isJumping { 
+        get { return _isJumping; }
+        set { _isJumping = value; } 
+    }
+
+    public void Jump(Vector2 v)
+    {
+        rigidbody2D.AddForce(v * 450);
+        isJumping = true;
+    }
+
+    public void OnCollisionEnter(Collision other)
+    {
+        isJumping = false;
+    }
+
+    public bool preparingToAttack = false;
+
+
+    public void Update()
+    {
+        Debug.Log("J " + isJumping);
+        if (preparingToAttack)
+        {
+            Moving = true;
+        }
     }
 }
