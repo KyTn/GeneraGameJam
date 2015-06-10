@@ -1,0 +1,13 @@
+
+mocosoft.png
+size: 256,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+MOCOSOFT
+  rotate: false
+  xy: 2, 2
+  size: 223, 919
+  orig: 230, 930
+  offset: 4, 0
+  index: -1
