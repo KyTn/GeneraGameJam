@@ -68,10 +68,13 @@ public class PlayerInfoGame : MonoBehaviour {
             Vector3[] path = new Vector3[2];
             path[1] = position;
             path[0] = new Vector3((position.x + transform.position.x) / 2, (position.y + transform.position.y) / 2 + 2, (position.y + transform.position.y) / 2);
-            transform.DOPath(path, 0.8f, PathType.CatmullRom, PathMode.Full3D, 5);
+            transform.DOPath(path, 0.8f, PathType.CatmullRom, PathMode.Full3D, 5).OnComplete(MoveToCallback);
         }
     }
-
+    public void MoveToCallback()
+    {
+        Moving = false;
+    }
 
     public void PickUpObject(Throwable obj)
     {
@@ -80,7 +83,12 @@ public class PlayerInfoGame : MonoBehaviour {
 
     }
 
-    public void ThrowObject(Vector2 v)
+    public void DrawArrow(Vector3 from, Vector3 to)
+    {
+
+    }
+
+    public void ThrowObject(Vector3 v)
     {
         if (carringObject)
         {
