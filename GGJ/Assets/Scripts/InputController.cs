@@ -14,46 +14,69 @@ public class InputController : MonoBehaviour {
 
     Vector2 firstTouchPosition;
     Vector2 lastTouchPosition;
-	void Update () {
+    Vector3 to, from;
 
-        if (gManager.MultiPlayerActive)
+    void Update()
+    {
+
+        if (Input.GetMouseButtonDown(0))
         {
 
-        }
-        else
-        {
-            if (Input.GetMouseButtonDown(0))
+            from = camera.ScreenToWorldPoint(Input.mousePosition);
+
+            if (from.x < 0)
             {
-                
-                RaycastHit2D ray = Physics2D.GetRayIntersection(camera.ScreenPointToRay(Input.mousePosition));
+                // Ha tocado el jugador 1
+                from.z = 10;
+                to.z = -20;
+
+                Ray r = new Ray(from, to);
+                RaycastHit2D ray = Physics2D.GetRayIntersection(r);
+
+                Debug.Log("checked!: pj1");
+
                 if (ray.collider != null && ray.collider.tag == "BuildingHigh")
                 {
-                    Debug.Log("checked!");
+                    gManager.PJ1.MoveTo(ray.collider.transform.position);
+
+                    Debug.Log("checked!: pos " + Input.mousePosition);
                 }
+            }
+            else
+            {
 
             }
-            if (Input.touchCount > 0)
+
+
+
+
+
+
+
+            
+
+        }
+        if (Input.touchCount > 0)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
-                if (Input.GetTouch(0).phase == TouchPhase.Began)
-                {
-                    firstTouchPosition = Input.touches[0].position;
+                firstTouchPosition = Input.touches[0].position;
 
-                    // Comprobar si hay algo en el mundo
+                // Comprobar si hay algo en el mundo
 
-                }
-                if (Input.GetTouch(0).phase == TouchPhase.Moved)
-                {
-                    // Si no se estan moviendo, entonces es tiempo de disparar
-                    lastTouchPosition = Input.touches[0].position;
-                    DrawArrowIndicator(firstTouchPosition, lastTouchPosition);
-                }
-                if (Input.GetTouch(0).phase == TouchPhase.Canceled || Input.GetTouch(0).phase == TouchPhase.Ended)
-                {
-                    // Si has levantado el dedo ... 
-                }
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            {
+                // Si no se estan moviendo, entonces es tiempo de disparar
+                lastTouchPosition = Input.touches[0].position;
+                DrawArrowIndicator(firstTouchPosition, lastTouchPosition);
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Canceled || Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                // Si has levantado el dedo ... 
             }
         }
-	}
+    }
 
     private void DrawArrowIndicator(Vector2 firstTouchPosition, Vector2 lastTouchPosition)
     {

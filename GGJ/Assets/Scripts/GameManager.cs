@@ -10,6 +10,15 @@ public class GameManager : MonoBehaviour {
     public delegate void finishGameDelegate();
     public event finishGameDelegate finishGameEvent;
 
+
+    public PlayerInfoGame PJ1;
+    public PlayerInfoGame PJ2;
+
+    public void Awake()
+    {
+
+    }
+
 	// Use this for initialization
 	void Start () {
 	    
