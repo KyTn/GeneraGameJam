@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{057079C0-A49F-1AF7-578C-B15EB585F1AB}</ProjectGuid>
+	<ProjectGuid>{FBDD131E-073C-4BA7-E7DD-2ED7A6C19E73}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,12 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Entities\PlayerInfoGame.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\InputController.cs" />
-     <Compile Include="Assets\Scripts\Scenario\BuildingHighController.cs" />
-     <Compile Include="Assets\Scripts\Scenario\ScenarioBuilder.cs" />
-     <Compile Include="Assets\Scripts\Scenario\ScenarioProps\BuildingHigh.cs" />
+     <Compile Include="Assets\Scripts\Scenario\NewBehaviourScript.js" />
      <None Include="Assets\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

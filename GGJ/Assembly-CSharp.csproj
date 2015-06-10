@@ -46,9 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Entities\PlayerInfoGame.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\InputController.cs" />
+     <Compile Include="Assets\Scripts\Scenario\BuildingHighController.cs" />
+     <Compile Include="Assets\Scripts\Scenario\ScenarioBuilder.cs" />
+     <Compile Include="Assets\Scripts\Scenario\ScenarioProps\BuildingHigh.cs" />
+     <None Include="Assets\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/angel_000/Documents/Unity Projects/GeneraGameJam/GGJ/Assets/DOTween/DOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
