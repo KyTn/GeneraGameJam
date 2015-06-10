@@ -305,6 +305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MultiPlayerActive: 0
   TimeCountDown: 60
+  PJ1: {fileID: 0}
+  PJ2: {fileID: 0}
 --- !u!4 &540801763
 Transform:
   m_ObjectHideFlags: 0
@@ -341,10 +343,6 @@ GameObject:
   - 114: {fileID: 646703146}
   - 61: {fileID: 646703144}
   m_Layer: 0
-<<<<<<< HEAD
-  m_Name: building_placeholder
-  m_TagString: BuildingHigh
-=======
   m_Name: edificioPoogle
   m_TagString: Building
   m_Icon: {fileID: 0}
@@ -403,7 +401,6 @@ GameObject:
   m_Layer: 0
   m_Name: w
   m_TagString: Building
->>>>>>> b8c7739d3e340b5c452114f6a44a9006358a66a5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

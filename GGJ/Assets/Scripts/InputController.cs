@@ -37,7 +37,7 @@ public class InputController : MonoBehaviour {
 
                 if (ray.collider != null && ray.collider.tag == "BuildingHigh")
                 {
-                    gManager.PJ1.MoveTo(ray.collider.transform.position);
+                    //gManager.PJ1.MoveTo(ray.collider.transform.position);
 
                     Debug.Log("checked!: pos " + Input.mousePosition);
                 }
