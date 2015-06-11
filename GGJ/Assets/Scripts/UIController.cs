@@ -46,13 +46,15 @@ public class UIController : MonoBehaviour {
             PlayerPrefs.SetFloat(i + "", gManager.edificios[i].life);
 
         }
-
+        PlayerPrefs.SetInt("coinPJ1", gManager.PJ1.money);
+        PlayerPrefs.SetInt("coinPJ2", gManager.PJ2.money);
 
         Application.LoadLevel(2);
     }
     public Text winText;
     public void win()
     {
+        PJ1Shop.SetActive(true);
         if (gManager.PJ1.money < gManager.PJ2.money)
         {
             winText.text = "PLAYER 2 WINS";

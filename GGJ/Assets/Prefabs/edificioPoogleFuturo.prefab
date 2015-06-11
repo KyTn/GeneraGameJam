@@ -210,6 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 20
+  "vibraci\xF3n": {fileID: 0}
+  caida: {fileID: 0}
   tipo: 1
   humo: {fileID: 0}
   grietas: {fileID: 21215850}

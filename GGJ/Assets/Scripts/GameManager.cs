@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour {
         {
             loadPlayerPref();
         }
+        //StartCoroutine(CountDownStart());
+
 	}
 	
 	// Update is called once per frame
@@ -121,6 +123,7 @@ public class GameManager : MonoBehaviour {
 
             if (TimeCountDown < 0)
             {
+                //PlayerDeath(PJ1.money < PJ2.money? 2 : 1);
                 finishGameEvent();
             }
 
@@ -160,7 +163,7 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(0.3f);
 
         Time.timeScale = 1f;
-        if (cargaPrefs) uiController.activePJ1Shop();
+        if (!cargaPrefs) uiController.activePJ1Shop();
         else uiController.win();
     }
 
@@ -170,34 +173,40 @@ public class GameManager : MonoBehaviour {
         {
             edificios[0].life = PlayerPrefs.GetInt("0");
         }
-        else if (PlayerPrefs.HasKey("1"))
+        if (PlayerPrefs.HasKey("1"))
         {
             edificios[0].life = PlayerPrefs.GetInt("1");
         }
-        else if (PlayerPrefs.HasKey("2"))
+        if (PlayerPrefs.HasKey("2"))
         {
             edificios[0].life = PlayerPrefs.GetInt("2");
         }
-        else if (PlayerPrefs.HasKey("3"))
+        if (PlayerPrefs.HasKey("3"))
         {
             edificios[0].life = PlayerPrefs.GetInt("3");
         }
-        else if (PlayerPrefs.HasKey("4"))
+        if (PlayerPrefs.HasKey("4"))
         {
             edificios[0].life = PlayerPrefs.GetInt("4");
         }
-        else if (PlayerPrefs.HasKey("5"))
+        if (PlayerPrefs.HasKey("5"))
         {
             edificios[0].life = PlayerPrefs.GetInt("5");
         }
-        else if (PlayerPrefs.HasKey("6"))
+        if (PlayerPrefs.HasKey("6"))
         {
             edificios[0].life = PlayerPrefs.GetInt("6");
         }
-        else if (PlayerPrefs.HasKey("7"))
+        if (PlayerPrefs.HasKey("7"))
         {
             edificios[0].life = PlayerPrefs.GetInt("7");
         }
+
+        PJ1.money = PlayerPrefs.GetInt("coinPJ1");
+        PJ2.money = PlayerPrefs.GetInt("coinPJ2");
+
+
+
     }
 
 }
