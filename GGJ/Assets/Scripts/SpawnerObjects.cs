@@ -28,7 +28,7 @@ public class SpawnerObjects : MonoBehaviour {
 
             GameObject g = Instantiate(l[Random.Range(0, l.Count)]) as GameObject;
             g.transform.parent = transform;
-            g.transform.position = Vector3.zero;
+            g.transform.localPosition = Vector3.zero;
 
 
 

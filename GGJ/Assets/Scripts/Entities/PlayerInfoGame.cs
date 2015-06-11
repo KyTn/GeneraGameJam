@@ -104,7 +104,7 @@ public class PlayerInfoGame : MonoBehaviour {
         }
         else
         {
-            ammount = new Vector3(-gManager.icontroller.J2left + gManager.icontroller.J2right, gManager.icontroller.J2forward - gManager.icontroller.J2backward, 0);
+            ammount = new Vector3(gManager.icontroller.J2left - gManager.icontroller.J2right, gManager.icontroller.J2forward - gManager.icontroller.J2backward, 0);
 
         }
         

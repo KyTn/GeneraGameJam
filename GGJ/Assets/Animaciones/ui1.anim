@@ -28,15 +28,15 @@ AnimationClip:
         inSlope: 3
         outSlope: 3
         tangentMode: 10
-      - time: 1.5
+      - time: 2.63333344
         value: 1
-        inSlope: -1.49999988
-        outSlope: -1.49999988
+        inSlope: -1.50000036
+        outSlope: -1.50000036
         tangentMode: 10
-      - time: 1.83333337
+      - time: 2.9666667
         value: 0
-        inSlope: -2.99999976
-        outSlope: -2.99999976
+        inSlope: -3.00000072
+        outSlope: -3.00000072
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -57,7 +57,7 @@ AnimationClip:
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31
-      - time: 1.36666667
+      - time: 2.5
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -92,7 +92,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 1.83333337
+    m_StopTime: 2.9666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -120,15 +120,15 @@ AnimationClip:
         inSlope: 3
         outSlope: 3
         tangentMode: 10
-      - time: 1.5
+      - time: 2.63333344
         value: 1
-        inSlope: -1.49999988
-        outSlope: -1.49999988
+        inSlope: -1.50000036
+        outSlope: -1.50000036
         tangentMode: 10
-      - time: 1.83333337
+      - time: 2.9666667
         value: 0
-        inSlope: -2.99999976
-        outSlope: -2.99999976
+        inSlope: -3.00000072
+        outSlope: -3.00000072
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -149,7 +149,7 @@ AnimationClip:
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31
-      - time: 1.36666667
+      - time: 2.5
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -162,7 +162,7 @@ AnimationClip:
     script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_EulerEditorCurves: []
   m_Events:
-  - time: 1.83333337
+  - time: 2.95000005
     functionName: deactivate
     data: 
     objectReferenceParameter: {fileID: 0}

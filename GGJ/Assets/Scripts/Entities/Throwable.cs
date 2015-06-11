@@ -28,7 +28,7 @@ public class Throwable : MonoBehaviour {
     {
         Debug.Log(other.gameObject.tag);
 
-        if (other.tag == "Building")
+        if (other.tag == "Building" && ( gameObject.layer == 12 || gameObject.layer == 13 ))
         {
             Buildings b = other.gameObject.GetComponent<Buildings>();
             b.life -= b.damage;
