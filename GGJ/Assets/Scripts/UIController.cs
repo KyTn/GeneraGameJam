@@ -48,7 +48,7 @@ public class UIController : MonoBehaviour {
         }
 
 
-        Application.LoadLevel(-1);
+        Application.LoadLevel(2);
     }
     public Text winText;
     public void win()
