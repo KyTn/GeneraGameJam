@@ -32,6 +32,14 @@ public class Throwable : MonoBehaviour {
         {
             Buildings b = other.gameObject.GetComponent<Buildings>();
             b.life -= b.damage;
+            if (carriedBy == 1)
+            {
+                g.PJ1.money += g.premioGolpe;
+            }
+            else
+            {
+                g.PJ2.money += g.premioGolpe;
+            }
             b.skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
             Destroy(gameObject);
         }

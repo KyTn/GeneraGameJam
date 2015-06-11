@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour {
 
     public InputController icontroller;
 
+    public int premioMuerte = 2000;
+
+    public GameObject menuCompra;
 
     public bool MultiPlayerActive = false;
 
@@ -120,7 +123,21 @@ public class GameManager : MonoBehaviour {
 
     public void PlayerDeath(int IDJugador)
     {
+        if (IDJugador == 1)
+        {
+            PJ2.money = premioMuerte;
+        }
+        else
+        {
+            PJ1.money = premioMuerte;
+        }
+        StartCoroutine(lanzaMenu());
 
+    }
+    IEnumerator lanzaMenu()
+    {
+        yield return new WaitForSeconds(3f);
+        menuCompra.SetActive(true);
     }
 
 
