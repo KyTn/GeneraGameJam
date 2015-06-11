@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
             }
         }
         // Si he pulsado B, me preparo para atacar
-        if (icontroller.J1BButton > 0)
+        if (icontroller.J1XButton > 0)
         {
             if (PJ1.carringObject)
             {
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour {
             }
 
             // Si he pulsado B, me preparo para atacar
-            if (icontroller.J2BButton > 0)
+            if (icontroller.J2XButton > 0)
             {
                 if (PJ2.carringObject)
                 {

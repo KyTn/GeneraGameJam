@@ -171,6 +171,10 @@ public class PlayerInfoGame : MonoBehaviour {
         {
             StartCoroutine(ignoreCollisionCountDown(other.collider, rigidbody2D.velocity));
         }
+        else if (other.collider.tag == "Throw")
+        {
+            PickUpObject(other.gameObject.GetComponent<Throwable>());
+        }  
         else if(other.transform.position.y <= transform.position.y)
         {
 
