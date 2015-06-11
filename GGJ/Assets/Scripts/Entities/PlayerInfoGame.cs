@@ -6,6 +6,9 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public GameManager gManager;
 
+    public Transform hand;
+
+
     #region Player Vars
 
     public int IDPlayer = 0; // 1 para J1, 2 para J2
@@ -99,22 +102,35 @@ public class PlayerInfoGame : MonoBehaviour {
             ammount = new Vector3(-gManager.icontroller.J2left + gManager.icontroller.J2right, gManager.icontroller.J2forward - gManager.icontroller.J2backward, 0);
 
         }
+        
         arrow.SetActive(true);
         arrow.transform.position = transform.position;
 
         ammount.Normalize();
 
-        ammount = (arrow.transform.position - ammount);
+        //ammount = (arrow.transform.position - ammount);
 
-        arrow.transform.Rotate(new Vector3(0, 0, 1), Vector3.Angle(new Vector3(1, 0, 0), ammount));
+        //arrow.transform.Rotate(new Vector3(0, 0, 1), Vector3.Angle(new Vector3(1, 0, 0), ammount));
+        //arrow.transform.rotation.SetEulerAngles(ammount);
 
+        float angle = Vector3.Angle(Vector3.left, ammount);
+        
+        //arrow.transform.rotation = Quaternion.Slerp(arrow.transform.rotation, Quaternion.AngleAxis(angle>180? angle : -angle , new Vector3(0, 0, 1)), 1);
+
+        arrow.transform.rotation = ammount.y < 0 ? Quaternion.AngleAxis(angle, -Vector3.forward) : Quaternion.AngleAxis(angle, Vector3.forward);
+
+        //Debug.Log("A " + ammount + "   " + Vector3.Angle(new Vector3(1, 0, 0), ammount));
     }
 
     public void ThrowObject(Vector3 v)
     {
         if (carringObject)
         {
+            arrow.SetActive(false);
+            preparingToAttack = false;
+            Debug.Log("T");
             objectCarried.ThrowObject(v);
+            objectCarried = null;
         }
     }
 
@@ -171,10 +187,6 @@ public class PlayerInfoGame : MonoBehaviour {
         {
             StartCoroutine(ignoreCollisionCountDown(other.collider, rigidbody2D.velocity));
         }
-        else if (other.collider.tag == "Throw")
-        {
-            PickUpObject(other.gameObject.GetComponent<Throwable>());
-        }  
         else if(other.transform.position.y <= transform.position.y)
         {
 
@@ -182,7 +194,22 @@ public class PlayerInfoGame : MonoBehaviour {
             jumpsCount = 0;
         }
 
+
+
+        
+        
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.collider2D.tag == "Throw")
+        {
+            Debug.Log("asdfasdfasdf");
+
+            PickUpObject(other.gameObject.GetComponent<Throwable>());
+        }  
+    }
+
 
     IEnumerator ignoreCollisionCountDown(Collider2D other, Vector2 velocity)
     {

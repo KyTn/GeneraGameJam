@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour {
         // Si he pulsado B, me preparo para atacar
         if (icontroller.J1XButton > 0)
         {
+            Debug.Log("X");
             if (PJ1.carringObject)
             {
                 PJ1.preparingToAttack = true;
