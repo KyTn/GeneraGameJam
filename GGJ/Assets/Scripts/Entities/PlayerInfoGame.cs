@@ -26,7 +26,7 @@ public class PlayerInfoGame : MonoBehaviour {
             
             _health = value;
             _health = Mathf.Clamp(_health, 0,1);
-            if (_health < 0)
+            if (_health <= 0)
             {
                 Death();
             }

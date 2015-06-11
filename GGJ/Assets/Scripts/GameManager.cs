@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 
     public List<Buildings> edificios;
 
-    public GameObject menuCompra;
+    public UIController uiController;
 
     public bool MultiPlayerActive = false;
 
@@ -127,9 +127,14 @@ public class GameManager : MonoBehaviour {
         }
 
     }
+    public AudioClip clipmuerte;
+    public AudioSource asource;
 
     public void PlayerDeath(int IDJugador)
     {
+        asource.clip = clipmuerte;
+        asource.Play();
+        
         if (IDJugador == 1)
         {
             PJ2.money = premioMuerte;
@@ -144,10 +149,18 @@ public class GameManager : MonoBehaviour {
         //foreach(Buildings i in edificios)
 
     }
+
+
+
     IEnumerator lanzaMenu()
     {
-        yield return new WaitForSeconds(3f);
-        menuCompra.SetActive(true);
+
+        Time.timeScale = 0.3f;
+
+        yield return new WaitForSeconds(0.3f);
+
+        Time.timeScale = 1f;
+        uiController.activePJ1Shop();
     }
 
     public void loadPlayerPref()

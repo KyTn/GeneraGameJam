@@ -46,6 +46,16 @@ public class Throwable : MonoBehaviour {
             b.skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
             Destroy(gameObject);
         }
+        else if (carriedBy!= 0 && other.tag == "Player")
+        {
+            PlayerInfoGame p = other.gameObject.GetComponent<PlayerInfoGame>();
+            if (carriedBy != p.IDPlayer)
+            {
+                p.health = -1;
+            }
+            
+
+        }
 
 
     }

@@ -68,9 +68,15 @@ public class UIController : MonoBehaviour {
         Application.LoadLevel(0);
     }
 
+    public void activePJ1Shop()
+    {
+        PJ1Shop.SetActive(true);
+    }
+
     public void finishBuyPJ1()
     {
-
+        PJ1Shop.SetActive(false);
+        PJ2Shop.SetActive(true);
     }
 
 }

@@ -159,15 +159,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 1"
 --- !u!222 &9150904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -339,15 +339,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 2"
 --- !u!222 &28559021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -749,15 +749,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 3"
 --- !u!222 &81363261
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -978,6 +978,10 @@ Prefab:
     - target: {fileID: 191858, guid: d225d5f4011331b4cb723e7ef738f2f1, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172704, guid: d225d5f4011331b4cb723e7ef738f2f1, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d225d5f4011331b4cb723e7ef738f2f1, type: 2}
@@ -2044,15 +2048,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 1"
 --- !u!222 &347919378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2608,6 +2612,7 @@ GameObject:
   - 4: {fileID: 540801763}
   - 114: {fileID: 540801762}
   - 114: {fileID: 540801764}
+  - 82: {fileID: 540801765}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2638,7 +2643,7 @@ MonoBehaviour:
   - {fileID: 1065723549}
   - {fileID: 845783033}
   - {fileID: 1291599090}
-  menuCompra: {fileID: 0}
+  uiController: {fileID: 1868342287}
   MultiPlayerActive: 1
   TimeCountDown: 60
   cargaPrefs: 0
@@ -2658,6 +2663,8 @@ MonoBehaviour:
   - {fileID: 127082, guid: cbd7281c6447c8e4d87a8c3cdf0298e4, type: 2}
   ThrowablesMocoSoftFuturo: []
   ThrowablesPoogleFuturo: []
+  clipmuerte: {fileID: 0}
+  asource: {fileID: 0}
 --- !u!4 &540801763
 Transform:
   m_ObjectHideFlags: 0
@@ -2723,6 +2730,64 @@ MonoBehaviour:
   J2downArrowButton: 0
   J2leftArrowButton: 0
   J2rightArrowButton: 0
+--- !u!82 &540801765
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540801761}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &553257113
 Prefab:
   m_ObjectHideFlags: 0
@@ -2869,15 +2934,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 2"
 --- !u!222 &559691707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5758,15 +5823,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 3"
 --- !u!222 &1360716674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6259,6 +6324,10 @@ Prefab:
     - target: {fileID: 464088, guid: ec325726cf83056469b72e795e3ee90f, type: 2}
       propertyPath: m_LocalScale.x
       value: .833333313
+      objectReference: {fileID: 0}
+    - target: {fileID: 164090, guid: ec325726cf83056469b72e795e3ee90f, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec325726cf83056469b72e795e3ee90f, type: 2}
@@ -7045,15 +7114,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 4"
 --- !u!222 &1730035854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7111,15 +7180,15 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 200
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "Repair \nBuilding 4"
 --- !u!222 &1733494830
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7262,7 +7331,7 @@ GameObject:
   - 114: {fileID: 1741385767}
   m_Layer: 8
   m_Name: PJ2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8194,6 +8263,7 @@ MonoBehaviour:
   PJ2button2: {fileID: 559691706}
   PJ2button3: {fileID: 81363260}
   PJ2button4: {fileID: 1733494829}
+  winText: {fileID: 0}
 --- !u!1 &1894355162
 GameObject:
   m_ObjectHideFlags: 0
@@ -9199,7 +9269,7 @@ GameObject:
   - 114: {fileID: 2060272753}
   m_Layer: 8
   m_Name: PJ1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
