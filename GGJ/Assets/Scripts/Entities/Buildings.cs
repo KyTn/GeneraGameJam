@@ -7,6 +7,7 @@ public class Buildings : MonoBehaviour {
     public float _life=1f;
     public float duracion=10f;
 
+    public SpriteRenderer grietas;
     public float life
 
 
@@ -19,6 +20,9 @@ public class Buildings : MonoBehaviour {
         set
         {
             _life = value;
+            Color g = grietas.color;
+            g.a += damage;
+            grietas.color = g;
 
             if (_life <= 0f)
             {
@@ -53,7 +57,7 @@ public class Buildings : MonoBehaviour {
         skeletonAnimation.state.SetAnimation(0, "GOLPE", true);
         transform.parent.DOMove(new Vector3(transform.position.x,transform.position.y-100,transform.position.z),duracion);
         
-        Destroy(this.gameObject, 10f);
+        Destroy(this.gameObject, 20f);
 
     }
 }
