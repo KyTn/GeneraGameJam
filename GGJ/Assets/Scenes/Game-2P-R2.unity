@@ -1987,7 +1987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &264203113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3337,7 +3337,7 @@ MonoBehaviour:
   - {fileID: 1820811242}
   - {fileID: 518369442}
   - {fileID: 1484883671}
-  menuCompra: {fileID: 0}
+  menuCompra: {fileID: 264203112}
   MultiPlayerActive: 1
   TimeCountDown: 60
   cargaPrefs: 0
@@ -8630,6 +8630,7 @@ MonoBehaviour:
   PJ2button2: {fileID: 559691706}
   PJ2button3: {fileID: 81363260}
   PJ2button4: {fileID: 1733494829}
+  winText: {fileID: 1818388201}
 --- !u!1 &1870538398
 GameObject:
   m_ObjectHideFlags: 0
