@@ -1,0 +1,69 @@
+
+PoogleFuturo.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+E
+  rotate: false
+  xy: 1866, 77
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+G
+  rotate: false
+  xy: 1866, 25
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+L
+  rotate: false
+  xy: 1918, 77
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+O
+  rotate: false
+  xy: 1918, 25
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+O_2
+  rotate: false
+  xy: 1970, 77
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+P
+  rotate: false
+  xy: 1970, 25
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+POOGLE_FUTURO
+  rotate: true
+  xy: 2, 2
+  size: 230, 930
+  orig: 230, 930
+  offset: 0, 0
+  index: -1
+REFERENCIA
+  rotate: true
+  xy: 934, 2
+  size: 230, 930
+  orig: 230, 930
+  offset: 0, 0
+  index: -1
+VENTANAS_FUTURISTA_POOGLE
+  rotate: false
+  xy: 1866, 129
+  size: 167, 103
+  orig: 167, 103
+  offset: 0, 0
+  index: -1

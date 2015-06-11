@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: poogle_SkeletonData
+  m_Name: PoogleFuturo_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 462189693643182408b90a8708732e3c, type: 2}
-  skeletonJSON: {fileID: 4900000, guid: f37f564dd3bfcb14481e87511fd33974, type: 3}
+  - {fileID: 11400000, guid: 9ed8bbdae7bf02949a1ac8fe8e9c3400, type: 2}
+  skeletonJSON: {fileID: 4900000, guid: f0d2f79fb7e8c724d90207894d3977f8, type: 3}
   scale: .00999999978
   fromAnimation: []
   toAnimation: []

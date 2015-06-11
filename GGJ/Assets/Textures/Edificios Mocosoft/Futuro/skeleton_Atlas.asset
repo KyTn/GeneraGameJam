@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: poogle_Atlas
+  m_Name: skeleton_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 6f7e0da77c203ef47ae6dba9ef409688, type: 3}
+  atlasFile: {fileID: 4900000, guid: 67e65063121d631469773125704f2b5a, type: 3}
   materials:
-  - {fileID: 2100000, guid: c8dce36366ef03248b196a87de5f7687, type: 2}
+  - {fileID: 2100000, guid: d8f2f7102e9aabf4093ad301e2fb6a7f, type: 2}
