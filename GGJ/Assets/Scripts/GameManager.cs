@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public InputController icontroller;
 
     public int premioMuerte = 2000;
+    public int premioGolpe = 100;
 
     public GameObject menuCompra;
 

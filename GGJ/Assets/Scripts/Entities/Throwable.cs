@@ -32,6 +32,9 @@ public class Throwable : MonoBehaviour {
         {
             Buildings b = other.gameObject.GetComponent<Buildings>();
             b.life -= b.damage;
+
+            GameManager g = GameObject.Find("GameManager").GetComponent<GameManager>();
+
             if (carriedBy == 1)
             {
                 g.PJ1.money += g.premioGolpe;
