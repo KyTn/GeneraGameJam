@@ -7,6 +7,9 @@ public class Buildings : MonoBehaviour {
     public float _life=1f;
     public float duracion=10f;
 
+    public AudioClip vibración;
+    public AudioClip caida;
+
     public int tipo;
 
     public Animator humo;
@@ -51,6 +54,8 @@ public class Buildings : MonoBehaviour {
             {
                 life -= damage;
                 skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
+                this.audio.clip = vibración;
+                audio.Play();
             }
             
         }
@@ -60,6 +65,8 @@ public class Buildings : MonoBehaviour {
     void destruyeEdificio()
     {
         humo.SetBool("Muerte",true);
+        this.audio.clip = caida;
+        audio.Play();
         Debug.Log("Muelte mujel!");
         skeletonAnimation.state.SetAnimation(0, "GOLPE", true);
         transform.parent.DOMove(new Vector3(transform.position.x,transform.position.y-100,transform.position.z),duracion);
