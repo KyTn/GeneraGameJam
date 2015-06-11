@@ -29,7 +29,8 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+    void Update()
+    {
 
         if (!PJ1.preparingToAttack)
         {
@@ -51,28 +52,31 @@ public class GameManager : MonoBehaviour {
                 PJ1.preparingToAttack = true;
             }
         }
-            // si he dejado de pulsar pero estaba preparado para atacar, ataco
+        // si he dejado de pulsar pero estaba preparado para atacar, ataco
         else if (PJ1.preparingToAttack)
         {
-            Vector3 aux = new Vector3(-icontroller.J1left + icontroller.J1right, icontroller.J1forward - icontroller.J1backward, 0);
-            PJ1.ThrowObject(aux);
+            //Vector3 aux = new Vector3(-icontroller.J1left + icontroller.J1right, icontroller.J1forward - icontroller.J1backward, 0);
+            PJ1.ThrowObject(PJ1.throwDirection);
         }
 
         if (MultiPlayerActive)
         {
 
-            PJ2.rigidbody2D.velocity = new Vector2((-icontroller.J2left + icontroller.J2right) * PJ2.speed * (PJ2.isJumping || PJ2.jumpsCount != 0 ? 0.4f : 1), PJ2.rigidbody2D.velocity.y);
-
-            if (!PJ2.isJumping && icontroller.J2AButton > 0)
+            if (!PJ2.preparingToAttack)
             {
-                //Debug.Log("JUMP2");
-                PJ2.Jump(new Vector2(0, icontroller.J2AButton));
+                PJ2.rigidbody2D.velocity = new Vector2((-icontroller.J2left + icontroller.J2right) * PJ2.speed * (PJ2.isJumping || PJ2.jumpsCount != 0 ? 0.4f : 1), PJ2.rigidbody2D.velocity.y);
 
+                if (!PJ2.isJumping && icontroller.J2AButton > 0)
+                {
+                    //Debug.Log("JUMP");
+                    PJ2.Jump(new Vector2(0, icontroller.J2AButton));
+
+                }
             }
-
             // Si he pulsado B, me preparo para atacar
             if (icontroller.J2XButton > 0)
             {
+                Debug.Log("X");
                 if (PJ2.carringObject)
                 {
                     PJ2.preparingToAttack = true;
@@ -81,13 +85,13 @@ public class GameManager : MonoBehaviour {
             // si he dejado de pulsar pero estaba preparado para atacar, ataco
             else if (PJ2.preparingToAttack)
             {
-                Vector3 aux = new Vector3(-icontroller.J2left + icontroller.J2right, icontroller.J2forward - icontroller.J2backward, 0);
-                PJ2.ThrowObject(aux);
+                //Vector3 aux = new Vector3(-icontroller.J1left + icontroller.J1right, icontroller.J1forward - icontroller.J1backward, 0);
+                PJ2.ThrowObject(PJ2.throwDirection);
             }
 
         }
+    }
 
-	}
 
 
     IEnumerator CountDownStart()

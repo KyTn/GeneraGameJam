@@ -55,6 +55,7 @@
      <Compile Include="Assets\Examples\Scripts\Raptor.cs" />
      <Compile Include="Assets\Examples\Scripts\Spineboy.cs" />
      <Compile Include="Assets\Examples\Scripts\SpineboyController.cs" />
+     <Compile Include="Assets\Scripts\Entities\Buildings.cs" />
      <Compile Include="Assets\Scripts\Entities\PlayerInfoGame.cs" />
      <Compile Include="Assets\Scripts\Entities\Throwable.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />

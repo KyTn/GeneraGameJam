@@ -81,14 +81,19 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public void PickUpObject(Throwable obj)
     {
+        if (carringObject) return;
+
         objectCarried = obj;
         objectCarried.carriedBy = IDPlayer;
+        objectCarried.transform.parent = hand;
+        objectCarried.transform.localPosition = Vector3.zero;
 
-        // TODO 
+        // activar animacion portador de objetos
 
 
     }
     public GameObject arrow;
+    public Vector3 throwDirection;
     public void DrawArrow()
     {
         Vector3 ammount;
@@ -120,6 +125,8 @@ public class PlayerInfoGame : MonoBehaviour {
         arrow.transform.rotation = ammount.y < 0 ? Quaternion.AngleAxis(angle, -Vector3.forward) : Quaternion.AngleAxis(angle, Vector3.forward);
 
         //Debug.Log("A " + ammount + "   " + Vector3.Angle(new Vector3(1, 0, 0), ammount));
+
+        throwDirection = arrow.transform.GetChild(0).position - arrow.transform.position;
     }
 
     public void ThrowObject(Vector3 v)
@@ -204,8 +211,6 @@ public class PlayerInfoGame : MonoBehaviour {
     {
         if (other.collider2D.tag == "Throw")
         {
-            Debug.Log("asdfasdfasdf");
-
             PickUpObject(other.gameObject.GetComponent<Throwable>());
         }  
     }

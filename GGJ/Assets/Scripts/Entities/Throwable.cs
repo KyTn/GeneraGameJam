@@ -9,6 +9,8 @@ public class Throwable : MonoBehaviour {
 
     public void ThrowObject(Vector3 v)
     {
+        rigidbody2D.isKinematic = false;
+        transform.parent = null;
         rigidbody2D.AddForce(v * speed);
     }
 
