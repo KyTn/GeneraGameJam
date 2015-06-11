@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\InputController.cs" />
      <Compile Include="Assets\Scripts\InputControllerASDFASDF.cs" />
      <Compile Include="Assets\Scripts\Scenario\ScenarioProps\BuildingHigh.cs" />
+     <Compile Include="Assets\Scripts\SpawnerObjects.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
      <Compile Include="Assets\Scripts\nubesGenerator.cs" />
      <Compile Include="Assets\nube.cs" />

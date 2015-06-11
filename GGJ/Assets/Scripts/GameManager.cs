@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
@@ -17,6 +18,11 @@ public class GameManager : MonoBehaviour {
 
     public PlayerInfoGame PJ1;
     public PlayerInfoGame PJ2;
+
+    public List<GameObject> ThrowablesMocoSoftPresente;
+    public List<GameObject> ThrowablesPooglePresente;
+    public List<GameObject> ThrowablesMocoSoftFuturo;
+    public List<GameObject> ThrowablesPoogleFuturo;
 
     public void Awake()
     {
@@ -46,7 +52,7 @@ public class GameManager : MonoBehaviour {
         // Si he pulsado B, me preparo para atacar
         if (icontroller.J1XButton > 0)
         {
-            Debug.Log("X");
+            //Debug.Log("X");
             if (PJ1.carringObject)
             {
                 PJ1.preparingToAttack = true;

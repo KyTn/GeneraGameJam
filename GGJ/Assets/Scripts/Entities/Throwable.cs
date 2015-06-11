@@ -12,8 +12,8 @@ public class Throwable : MonoBehaviour {
         if (carriedBy == 1) gameObject.layer = 12;
         else gameObject.layer = 13;
 
-        //rigidbody2D.isKinematic = false;
-        collider2D.isTrigger = false;
+        rigidbody2D.isKinematic = false;
+        //collider2D.isTrigger = false;
         transform.parent = null;
         rigidbody2D.AddForce(v * speed);
     }
@@ -27,6 +27,14 @@ public class Throwable : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.gameObject.tag);
+
+        if (other.tag == "Building")
+        {
+            Buildings b = other.gameObject.GetComponent<Buildings>();
+            b.life -= b.damage;
+            b.skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
+            Destroy(gameObject);
+        }
 
 
     }
