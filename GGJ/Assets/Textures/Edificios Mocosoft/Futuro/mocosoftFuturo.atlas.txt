@@ -1,47 +1,40 @@
 
-skeleton.png
+mocosoftFuturo.png
 size: 2048,256
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 MOCOSOFT_CARTEL
-  rotate: true
-  xy: 1964, 103
+  rotate: false
+  xy: 1138, 193
   size: 145, 39
   orig: 145, 39
   offset: 0, 0
   index: -1
 MOCOSOFT_FUTURO
   rotate: true
-  xy: 2, 18
+  xy: 2, 2
   size: 230, 930
   orig: 230, 930
   offset: 0, 0
   index: -1
 MOCOSOFT_LOGO
   rotate: false
-  xy: 1964, 56
+  xy: 934, 45
   size: 60, 45
   orig: 60, 45
   offset: 0, 0
   index: -1
-REFERENCIA2
-  rotate: true
-  xy: 934, 18
-  size: 230, 930
-  orig: 230, 930
-  offset: 0, 0
-  index: -1
 VENTANAS1_FUTURO_ROJO(1)
   rotate: false
-  xy: 1866, 2
+  xy: 934, 92
   size: 174, 42
   orig: 174, 42
   offset: 0, 0
   index: -1
 VENTANAS2_FUTURO_ROJO
-  rotate: true
-  xy: 1866, 46
+  rotate: false
+  xy: 934, 136
   size: 202, 96
   orig: 202, 96
   offset: 0, 0
