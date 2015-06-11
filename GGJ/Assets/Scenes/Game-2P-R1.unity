@@ -1222,6 +1222,7 @@ GameObject:
   - 23: {fileID: 183947004}
   - 114: {fileID: 183947003}
   - 114: {fileID: 183947007}
+  - 82: {fileID: 183947008}
   m_Layer: 9
   m_Name: sprite
   m_TagString: Building
@@ -1322,11 +1323,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 20
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 1
   humo: {fileID: 678949970}
   grietas: {fileID: 395249708}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &183947008
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 183947001}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 129
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &190768445
 Prefab:
   m_ObjectHideFlags: 0
@@ -1691,6 +1752,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents:
     - {fileID: 6168308, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
@@ -3294,6 +3363,7 @@ GameObject:
   - 23: {fileID: 621262869}
   - 114: {fileID: 621262868}
   - 114: {fileID: 621262872}
+  - 82: {fileID: 621262873}
   m_Layer: 14
   m_Name: sprite
   m_TagString: Building
@@ -3394,11 +3464,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 10
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 2
   humo: {fileID: 1969899536}
   grietas: {fileID: 2039535101}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &621262873
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621262866}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &645455102
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,7 +3688,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8c6015a450cfa2345b77685c9a0eeccc, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -3847,7 +3977,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8c6015a450cfa2345b77685c9a0eeccc, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -4145,6 +4275,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
@@ -4216,6 +4354,7 @@ GameObject:
   - 23: {fileID: 845783029}
   - 114: {fileID: 845783028}
   - 114: {fileID: 845783033}
+  - 82: {fileID: 845783034}
   m_Layer: 14
   m_Name: sprite
   m_TagString: Building
@@ -4316,11 +4455,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 10
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 2
   humo: {fileID: 94644476}
   grietas: {fileID: 730541667}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &845783034
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845783027}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &858510203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,6 +4704,14 @@ Prefab:
       propertyPath: humo
       value: 
       objectReference: {fileID: 1706503630}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
   m_RootGameObject: {fileID: 2058470495}
@@ -4773,6 +4980,7 @@ GameObject:
   - 23: {fileID: 1065723546}
   - 114: {fileID: 1065723545}
   - 114: {fileID: 1065723549}
+  - 82: {fileID: 1065723550}
   m_Layer: 14
   m_Name: sprite
   m_TagString: Building
@@ -4873,11 +5081,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 10
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 2
   humo: {fileID: 1706503630}
   grietas: {fileID: 538846322}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &1065723550
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065723543}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1071800352
 Prefab:
   m_ObjectHideFlags: 0
@@ -5194,6 +5462,14 @@ Prefab:
       propertyPath: humo
       value: 
       objectReference: {fileID: 1086312206}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
   m_RootGameObject: {fileID: 1388870024}
@@ -5270,6 +5546,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
@@ -5340,6 +5624,7 @@ GameObject:
   - 23: {fileID: 1291599087}
   - 114: {fileID: 1291599086}
   - 114: {fileID: 1291599090}
+  - 82: {fileID: 1291599091}
   m_Layer: 14
   m_Name: sprite
   m_TagString: Building
@@ -5440,11 +5725,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 10
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 2
   humo: {fileID: 1495646316}
   grietas: {fileID: 1681621905}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &1291599091
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291599084}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1301879620
 GameObject:
   m_ObjectHideFlags: 0
@@ -6198,6 +6543,7 @@ GameObject:
   - 92: {fileID: 1501550298}
   - 124: {fileID: 1501550297}
   - 81: {fileID: 1501550296}
+  - 82: {fileID: 1501550301}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6270,6 +6616,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!82 &1501550301
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501550295}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 2f96b1455dcee9f41a276c7b010f8e26, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .57099998
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1523051297
 Prefab:
   m_ObjectHideFlags: 0
@@ -7712,6 +8116,14 @@ Prefab:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11481344, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9e1dd7748c33d04cb1ffd05a92e15c7, type: 2}
   m_RootGameObject: {fileID: 83075098}
@@ -8096,6 +8508,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents:
     - {fileID: 6168308, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
@@ -8277,6 +8697,7 @@ GameObject:
   - 23: {fileID: 1894355165}
   - 114: {fileID: 1894355164}
   - 114: {fileID: 1894355168}
+  - 82: {fileID: 1894355169}
   m_Layer: 9
   m_Name: sprite
   m_TagString: Building
@@ -8377,11 +8798,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 20
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 1
   humo: {fileID: 1086312206}
   grietas: {fileID: 444945941}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &1894355169
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1894355162}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1935294945
 GameObject:
   m_ObjectHideFlags: 0
@@ -8395,6 +8876,7 @@ GameObject:
   - 23: {fileID: 1935294948}
   - 114: {fileID: 1935294947}
   - 114: {fileID: 1935294951}
+  - 82: {fileID: 1935294952}
   m_Layer: 9
   m_Name: sprite
   m_TagString: Building
@@ -8495,11 +8977,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 20
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 1
   humo: {fileID: 317100387}
   grietas: {fileID: 372330833}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &1935294952
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935294945}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1938834606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8558,6 +9100,7 @@ GameObject:
   - 23: {fileID: 1957789028}
   - 114: {fileID: 1957789027}
   - 114: {fileID: 1957789030}
+  - 82: {fileID: 1957789031}
   m_Layer: 9
   m_Name: sprite
   m_TagString: Building
@@ -8658,11 +9201,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 20
+  "vibraci\xF3n": {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
+  caida: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
   tipo: 1
   humo: {fileID: 1657794502}
   grietas: {fileID: 679236383}
   damage: .200000003
   skeletonAnimation: {fileID: 0}
+--- !u!82 &1957789031
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957789024}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .495999992
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1969899535
 GameObject:
   m_ObjectHideFlags: 0
@@ -9453,6 +10056,14 @@ Prefab:
       propertyPath: humo
       value: 
       objectReference: {fileID: 1657794502}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: caida
+      value: 
+      objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 11410590, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
+      propertyPath: "vibraci\xF3n"
+      value: 
+      objectReference: {fileID: 8300000, guid: c39a837d4b33a194dabe7bdfc7095794, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aee509e68ef0f0b48a4a15c378d17e50, type: 2}
   m_RootGameObject: {fileID: 646703143}

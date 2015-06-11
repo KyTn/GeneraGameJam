@@ -22,6 +22,7 @@ public class Throwable : MonoBehaviour {
     {
 
         Destroy(gameObject);
+        this.audio.Play();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
