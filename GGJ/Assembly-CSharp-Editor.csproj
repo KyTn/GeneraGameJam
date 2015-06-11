@@ -60,6 +60,7 @@
      <Compile Include="Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
      <Compile Include="Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
      <Compile Include="Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilitySubmeshRendererInspector.cs" />
+     <None Include="Assets\Textures\PJ\Player.atlas.txt" />
      <None Include="Assets\Examples\Spine\Eyes\eyes.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
      <None Include="Assets\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
