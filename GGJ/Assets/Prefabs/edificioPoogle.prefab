@@ -12,7 +12,8 @@ GameObject:
   - 33: {fileID: 3339122}
   - 23: {fileID: 2339122}
   - 114: {fileID: 11439122}
-  m_Layer: 0
+  - 114: {fileID: 11410590}
+  m_Layer: 9
   m_Name: sprite
   m_TagString: Building
   m_Icon: {fileID: 0}
@@ -28,8 +29,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 468308}
   - 114: {fileID: 11468306}
-  - 61: {fileID: 6168308}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: edificioPoogle
   m_TagString: BuildingHigh
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.05000019, y: 6.71999979, z: 0}
+  m_LocalPosition: {x: -2.82999992, y: 3.96000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 468306}
@@ -109,7 +109,7 @@ Renderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
 --- !u!33 &3339122
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -128,17 +128,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.37391782, y: 8.32887745}
   m_Center: {x: -.0308690444, y: 4.22250128}
---- !u!61 &6168308
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168308}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 2.15899086, y: 1.55183661}
-  m_Center: {x: .0282678604, y: -.108219624}
 --- !u!61 &6168310
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -150,6 +139,21 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 2.27368164, y: .327666312}
   m_Center: {x: .135225847, y: .0551498979}
+--- !u!114 &11410590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d5c59abe03a6c41a3686e9c3b59154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _life: 1
+  duracion: 10
+  damage: .200000003
+  skeletonAnimation: {fileID: 0}
 --- !u!114 &11439122
 MonoBehaviour:
   m_ObjectHideFlags: 1
