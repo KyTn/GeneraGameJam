@@ -2663,8 +2663,8 @@ MonoBehaviour:
   - {fileID: 127082, guid: cbd7281c6447c8e4d87a8c3cdf0298e4, type: 2}
   ThrowablesMocoSoftFuturo: []
   ThrowablesPoogleFuturo: []
-  clipmuerte: {fileID: 0}
-  asource: {fileID: 0}
+  clipmuerte: {fileID: 8300000, guid: 66f3fc86d013d2146b7cb41412a9c179, type: 3}
+  asource: {fileID: 540801765}
 --- !u!4 &540801763
 Transform:
   m_ObjectHideFlags: 0
