@@ -160,7 +160,8 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(0.3f);
 
         Time.timeScale = 1f;
-        uiController.activePJ1Shop();
+        if (cargaPrefs) uiController.activePJ1Shop();
+        else uiController.win();
     }
 
     public void loadPlayerPref()

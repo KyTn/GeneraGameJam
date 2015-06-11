@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/menuPrincipal.unity
   - enabled: 1
     path: Assets/Scenes/Game-2P-R1.unity
+  - enabled: 1
+    path: Assets/Scenes/Game-2P-R2.unity
