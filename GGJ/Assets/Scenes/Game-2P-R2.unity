@@ -412,6 +412,10 @@ Prefab:
       propertyPath: caida
       value: 
       objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 177928, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
   m_RootGameObject: {fileID: 1339229783}
@@ -2050,6 +2054,10 @@ Prefab:
       propertyPath: caida
       value: 
       objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 177928, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
   m_RootGameObject: {fileID: 1871403231}
@@ -2787,7 +2795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &347919375
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,6 +4635,10 @@ Prefab:
       propertyPath: caida
       value: 
       objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 177928, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
   m_RootGameObject: {fileID: 1647670322}
@@ -4699,7 +4711,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1001 &705422001
 Prefab:
   m_ObjectHideFlags: 0
@@ -4941,7 +4953,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 729898889}
   - 61: {fileID: 729898890}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: azotea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5827,7 +5839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &1111088677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6265,11 +6277,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 466570, guid: 24ba2e5dc4a61b443b23a0c2a96d1ca5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.73513317
+      value: 3.20000005
       objectReference: {fileID: 0}
     - target: {fileID: 466570, guid: 24ba2e5dc4a61b443b23a0c2a96d1ca5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.4028703
+      value: 2.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 466570, guid: 24ba2e5dc4a61b443b23a0c2a96d1ca5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6293,7 +6305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466570, guid: 24ba2e5dc4a61b443b23a0c2a96d1ca5, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3366570, guid: 24ba2e5dc4a61b443b23a0c2a96d1ca5, type: 2}
       propertyPath: m_Mesh
@@ -6803,6 +6815,10 @@ Prefab:
       propertyPath: caida
       value: 
       objectReference: {fileID: 8300000, guid: f98c5338a788fb44597028ab64e47760, type: 3}
+    - target: {fileID: 177928, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c8b614f88e731e4793c200270f4f60a, type: 2}
   m_RootGameObject: {fileID: 1046820957}
@@ -6925,13 +6941,13 @@ Transform:
   m_PrefabInternal: {fileID: 1301073697}
   m_GameObject: {fileID: 1366641175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.73513317, y: 1.4028703, z: 0}
+  m_LocalPosition: {x: 3.20000005, y: 2.70000005, z: 0}
   m_LocalScale: {x: -1.20000005, y: 1.20000005, z: 1}
   m_Children:
   - {fileID: 248634817}
   - {fileID: 1870538399}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
 --- !u!114 &1366641178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7584,7 +7600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1501550295
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,7 +7978,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1614203989}
   - 61: {fileID: 1614203990}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: azotea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8305,7 +8321,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &1678257146
 GameObject:
   m_ObjectHideFlags: 0
@@ -8582,7 +8598,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1725110639}
   - 61: {fileID: 1725110640}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: azotea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9204,7 +9220,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1793072932}
   - 61: {fileID: 1793072933}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: azotea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
