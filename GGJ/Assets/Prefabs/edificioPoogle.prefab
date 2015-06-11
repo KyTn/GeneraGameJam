@@ -138,7 +138,7 @@ Renderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
 --- !u!33 &3339122
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -180,7 +180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _life: 1
-  duracion: 10
+  duracion: 20
+  tipo: 1
+  humo: {fileID: 0}
   grietas: {fileID: 21256634}
   damage: .200000003
   skeletonAnimation: {fileID: 0}

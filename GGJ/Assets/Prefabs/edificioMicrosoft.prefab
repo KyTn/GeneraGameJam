@@ -230,6 +230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 1
   duracion: 10
+  tipo: 2
+  humo: {fileID: 0}
   grietas: {fileID: 21281344}
   damage: .200000003
   skeletonAnimation: {fileID: 0}

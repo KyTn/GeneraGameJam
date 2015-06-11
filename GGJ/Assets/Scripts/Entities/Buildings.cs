@@ -7,11 +7,13 @@ public class Buildings : MonoBehaviour {
     public float _life=1f;
     public float duracion=10f;
 
+    public int tipo;
+
+    public Animator humo;
+
     public SpriteRenderer grietas;
     public float life
-
-
-    
+      
     {
         get
         {
@@ -43,16 +45,21 @@ public class Buildings : MonoBehaviour {
 	// Update is called once per frame
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag != "Player")
+        if (collision.gameObject.tag == "Throw")
         {
-            life -= damage;
-            skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
+            if (collision.gameObject.GetComponent<Throwable>().carriedBy == (tipo == 1 ? 2 : 1))
+            {
+                life -= damage;
+                skeletonAnimation.state.SetAnimation(0, "GOLPE", false);
+            }
+            
         }
         
     }
 
     void destruyeEdificio()
     {
+        humo.SetBool("Muerte",true);
         Debug.Log("Muelte mujel!");
         skeletonAnimation.state.SetAnimation(0, "GOLPE", true);
         transform.parent.DOMove(new Vector3(transform.position.x,transform.position.y-100,transform.position.z),duracion);
