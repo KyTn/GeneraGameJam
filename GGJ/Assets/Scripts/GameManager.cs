@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public int premioMuerte = 2000;
     public int premioGolpe = 100;
 
+    public List<Buildings> edificios;
+
     public GameObject menuCompra;
 
     public bool MultiPlayerActive = false;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour {
     public delegate void finishGameDelegate();
     public event finishGameDelegate finishGameEvent;
 
+    public bool cargaPrefs = false;
 
     public PlayerInfoGame PJ1;
     public PlayerInfoGame PJ2;
@@ -35,7 +38,10 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    
+        if (cargaPrefs)
+        {
+            loadPlayerPref();
+        }
 	}
 	
 	// Update is called once per frame
@@ -134,6 +140,9 @@ public class GameManager : MonoBehaviour {
         }
         StartCoroutine(lanzaMenu());
 
+        //int aux = 0;
+        //foreach(Buildings i in edificios)
+
     }
     IEnumerator lanzaMenu()
     {
@@ -141,5 +150,40 @@ public class GameManager : MonoBehaviour {
         menuCompra.SetActive(true);
     }
 
+    public void loadPlayerPref()
+    {
+        if (PlayerPrefs.HasKey("0"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("0");
+        }
+        else if (PlayerPrefs.HasKey("1"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("1");
+        }
+        else if (PlayerPrefs.HasKey("2"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("2");
+        }
+        else if (PlayerPrefs.HasKey("3"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("3");
+        }
+        else if (PlayerPrefs.HasKey("4"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("4");
+        }
+        else if (PlayerPrefs.HasKey("5"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("5");
+        }
+        else if (PlayerPrefs.HasKey("6"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("6");
+        }
+        else if (PlayerPrefs.HasKey("7"))
+        {
+            edificios[0].life = PlayerPrefs.GetInt("7");
+        }
+    }
 
 }
