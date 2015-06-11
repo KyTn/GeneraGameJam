@@ -190,7 +190,7 @@ public class PlayerInfoGame : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform.position.y > transform.position.y && other.gameObject.layer == 9)
+        if (other.transform.position.y > transform.position.y && (other.gameObject.layer == 9 || other.gameObject.layer == 14))
         {
             StartCoroutine(ignoreCollisionCountDown(other.collider, rigidbody2D.velocity));
         }

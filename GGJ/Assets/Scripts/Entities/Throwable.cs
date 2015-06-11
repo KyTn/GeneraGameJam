@@ -9,13 +9,26 @@ public class Throwable : MonoBehaviour {
 
     public void ThrowObject(Vector3 v)
     {
-        rigidbody2D.isKinematic = false;
+        if (carriedBy == 1) gameObject.layer = 12;
+        else gameObject.layer = 13;
+
+        //rigidbody2D.isKinematic = false;
+        collider2D.isTrigger = false;
         transform.parent = null;
         rigidbody2D.AddForce(v * speed);
     }
 
     public void OnCollisionEnter2D(Collision2D other)
     {
+
         Destroy(gameObject);
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(other.gameObject.tag);
+
+
+    }
+
 }
