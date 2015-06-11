@@ -203,6 +203,7 @@ public class PlayerInfoGame : MonoBehaviour {
 
         else if (other.gameObject.tag == "Death" || other.gameObject.tag == "Throw")
         {
+            health = 0;
 
         }
 
