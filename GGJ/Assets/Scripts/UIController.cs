@@ -33,10 +33,34 @@ public class UIController : MonoBehaviour {
 
     }
 
+    
+    public void RepairBuilding(int i)
+    {
+        gManager.edificios[i].life = 1f;
+    }
 
     public void nextRound()
     {
+        for(int i = 0; i < gManager.edificios.Count; i++){
+
+            PlayerPrefs.SetFloat(i + "", gManager.edificios[i].life);
+
+        }
+
+
         Application.LoadLevel(-1);
+    }
+    public Text winText;
+    public void win()
+    {
+        if (gManager.PJ1.money < gManager.PJ2.money)
+        {
+            winText.text = "PLAYER 2 WINS";
+        }
+        else
+        {
+            winText.text = "PLAYER 1 WINS";
+        }
     }
 
     public void finishMatch()

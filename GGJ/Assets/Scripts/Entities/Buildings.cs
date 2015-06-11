@@ -23,7 +23,7 @@ public class Buildings : MonoBehaviour {
         {
             _life = value;
             Color g = grietas.color;
-            g.a += damage;
+            g.a += 1 -_life;
             grietas.color = g;
 
             if (_life <= 0f)
