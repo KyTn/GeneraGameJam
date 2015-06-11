@@ -8074,6 +8074,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ce3bcd692ccb94d849e3731c3bbc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gManager: {fileID: 540801762}
+  coinPJ1: {fileID: 658806465}
+  coinPJ2: {fileID: 722179816}
+  CountDown: {fileID: 645455104}
+  PJ1Shop: {fileID: 13034412}
+  PJ1button1: {fileID: 347919377}
+  PJ1button2: {fileID: 28559020}
+  PJ1button3: {fileID: 1360716673}
+  PJ1button4: {fileID: 1730035853}
+  PJ2Shop: {fileID: 39120527}
+  PJ2button1: {fileID: 9150903}
+  PJ2button2: {fileID: 559691706}
+  PJ2button3: {fileID: 81363260}
+  PJ2button4: {fileID: 1733494829}
 --- !u!1 &1894355162
 GameObject:
   m_ObjectHideFlags: 0
