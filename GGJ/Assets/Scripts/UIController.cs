@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour {
     public void Update()
     {
         coinPJ1.text = gManager.PJ1.money + "";
-        coinPJ1.text = gManager.PJ2.money + "";
+        coinPJ2.text = gManager.PJ2.money + "";
 
         CountDown.text = "00:" + (int)gManager.TimeCountDown;
 
@@ -43,5 +43,10 @@ public class UIController : MonoBehaviour {
     {
         Application.LoadLevel(0);
     }
-	
+
+    public void finishBuyPJ1()
+    {
+
+    }
+
 }
