@@ -201,7 +201,10 @@ public class PlayerInfoGame : MonoBehaviour {
             jumpsCount = 0;
         }
 
+        else if (other.gameObject.tag == "Death" || other.gameObject.tag == "Throw")
+        {
 
+        }
 
         
         
